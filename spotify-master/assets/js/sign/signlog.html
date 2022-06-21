@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="./assets/images/title.ico">
+		<title>Wubi Website</title>
+	<title>Đăng kí và đăng nhập</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+		a.dn1{
+			color: white;
+   			text-decoration: none;
+		}
+	</style>
+</head>
+<body>
+
+<div class="container" id="container">
+<div class="form-container sign-up-container">
+
+<form action="">
+	<div><left>
+		<img src="logo.png" height="50px" width="50px" alt="" />
+	</div></left>
+	<h1>Tạo tài khoản</h1>
+	
+	<div class="social-container">
+		<a href="https://www.facebook.com/" class="social"><i class="fa fa-facebook"></i></a>
+		<a href="https://mail.google.com/" class="social"><i class="fa fa-google"></i></a>
+		<a href="https://www.linkedin.com/" class="social"><i class="fa fa-linkedin"></i></a>
+	</div>
+	<span>hoặc sử dụng email của bạn</span>
+	<input type="text" name="name" placeholder="Tên đăng nhập">
+	<input type="email" name="email" placeholder="Email">
+	<input type="password" name="password" placeholder="Mật khẩu">
+	<button>Đăng Kí</button>
+</form>
+</div>
+
+<div class="form-container sign-in-container">
+	<form action="#">
+		<div><left>
+			<img src="logo.png" height="50px" width="50px" alt="" />
+		</div></left>
+		<h1>Đăng nhập</h1>
+		<div class="social-container">
+		<a href="https://www.facebook.com/" class="social"><i class="fa fa-facebook"></i></a>
+		<a href="https://mail.google.com/" class="social"><i class="fa fa-google"></i></a>
+		<a href="https://www.linkedin.com/" class="social"><i class="fa fa-linkedin"></i></a>
+	</div>
+	<span>hoặc sử dụng tài khoản của bạn</span>
+	<input type="email" name="email" placeholder="Email">
+	<input type="password" name="password" placeholder="Mật Khẩu">
+	<a href="#">Quên mật khẩu</a>
+
+	<div id="dn">
+
+	<button>
+
+		<a class="dn1" href=file:///D:\Test\Doan\spotify-master\index.html> Đăng Nhập</a>
+		</button>
+	</div>
+
+</div>
+<div class="overlay-container">
+	<div class="overlay">
+		<div class="overlay-panel overlay-left">
+			<h1>Chào mừng quay trở lại!</h1>
+			<p>Để tiếp tục, vui lòng đăng nhập tài khoản.</p>
+			<button class="ghost" id="signIn">Đăng nhập</button>
+		</div>
+		<div class="overlay-panel overlay-right">
+			<h1>Chào bạn!</h1>
+			<p>Nhập thông tin chi tiết của bạn và bắt đầu hành trình với chúng tôi.</p>
+			<button class="ghost" id="signUp">Đăng ký</button>
+		</div>
+	</div>
+</div>
+</div>
+
+<script type="text/javascript">
+	const signUpButton = document.getElementById('signUp');
+	const signInButton = document.getElementById('signIn');
+	const container = document.getElementById('container');
+
+	signUpButton.addEventListener('click', () => {
+		container.classList.add("right-panel-active");
+	});
+	signInButton.addEventListener('click', () => {
+		container.classList.remove("right-panel-active");
+	});
+</script>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+

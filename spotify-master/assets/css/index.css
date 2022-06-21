@@ -269,6 +269,10 @@ html * {
     border-radius: 2px;
     box-shadow: 0px 0px 10px black; 
 }
+a.account1{
+    color: white;
+    text-decoration: none;
+}
 
 .drop-bar-item {
     padding: 12px;
@@ -328,6 +332,33 @@ html * {
     color: white;
     background-color: #282828;
 }
+a.about-us{
+    color: white;
+    text-decoration: none;
+
+}
+a.current1{
+    color: white;
+    text-decoration: none;
+
+}
+a.current2{
+    color: white;
+    text-decoration: none;
+
+}
+#root__left-sidebar__navigation >a.current1 {
+    color: white;
+    background-color: #282828;
+    text-decoration: none;
+
+    
+}
+#root__left-sidebar__navigation .current2 {
+    color: white;
+    
+}
+
 
 #root__left-sidebar__navigation > li:hover {
     opacity: 1;

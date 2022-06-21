@@ -639,10 +639,10 @@ const app = {
               </div>
             </li>
             <li class='album'>${song.album}</li>
-            <li class='date'>Sep 8, 2021</li>
+            <li class='date'>25/05/2022</li>
             <li class='more'>
               <img class="more__favorite" src="./assets/images/now-playing/favorite.png">
-              <span class="more__time">4:45</span>
+              <span class="more__time">4:20</span>
               <img class="more__icon" src='./assets/images/main-view/see-more.PNG'>
             </li>
           </ul>`).join('')
@@ -1248,10 +1248,9 @@ const app = {
               const dropBar = document.createElement('ul')
               dropBar.classList.add('root__top__user__drop-bar')
               dropBar.innerHTML = `
-                  <li class="drop-bar-item"><span>Account</span><img src="assets/images/top-container/share.png"></li>
-                  <a href=file:///C:/Web/trang2.html></a>
-                  <li class="drop-bar-item"><span>Profile</span></li>
-                  <li class="drop-bar-item"><span>Log out</span></li>`
+                  <li class="drop-bar-item"><span><a class="account1" href="./assets/js/account.html">Account</a></span><img src="assets/images/top-container/share.png"></li>
+                  <li class="drop-bar-item"><span><a class="account1" href="./assets/js/profile.html">Profile</a></span></li>
+                  <li class="drop-bar-item"><span><a class="account1" href="./assets/js/sign/signlog.html">Log out</a></span></li>`
               dropBar.style.right = `${friendsBar.offsetWidth + 32}px`
               userBox.appendChild(dropBar)
           }
